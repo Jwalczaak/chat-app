@@ -1,0 +1,14 @@
+<mat-form-field
+  floatLabel="always"
+  hideRequiredMarkerf
+  appearance="fill"
+  color="outline"
+>
+  <mat-label>Messsage </mat-label>
+  <textarea matInput #text></textarea>
+
+  <mat-hint align="end">Max 200 characters</mat-hint>
+  <button mat-button color="primary" (click)="getText(text.value)">
+    wyślij
+  </button>
+</mat-form-field>
